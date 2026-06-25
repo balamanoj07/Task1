@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Satisfaction Survey</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:30px;
+    color:#222;
+}
+
+.container{
+    width:1170px;
+    margin:auto;
+}
+
+.required{
+    color:red;
+}
+
+label.main-label{
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.name-row{
+    display:flex;
+    gap:30px;
+}
+
+.name-box{
+    width:335px;
+}
+
+.name-box input{
+    width:100%;
+    height:42px;
+    border:1px solid #ccc;
+    padding:8px;
+    box-sizing:border-box;
+}
+
+.sub-label{
+    margin-top:6px;
+    font-size:14px;
+}
+
+.email-box{
+    width:700px;
+}
+
+.email-box input{
+    width:100%;
+    height:42px;
+    border:1px solid #ccc;
+    padding:8px;
+    box-sizing:border-box;
+}
+
+.section{
+    margin-top:30px;
+}
+
+.stars{
+    font-size:42px;
+    color:#e6b07d;
+    letter-spacing:5px;
+    margin:5px 0 15px;
+}
+
+.desc{
+    margin-bottom:25px;
+}
+
+.section-title{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0 10px;
+}
+
+th{
+    font-weight:normal;
+    text-align:center;
+    padding-bottom:10px;
+}
+
+th:first-child{
+    width:250px;
+}
+
+td{
+    padding:12px 15px;
+}
+
+.row-gray{
+    background:#f3f3f3;
+}
+
+.row-white{
+    background:#ffffff;
+}
+
+.left{
+    text-align:left;
+    font-size:16px;
+}
+
+.center{
+    text-align:center;
+}
+
+input[type="radio"]{
+    width:18px;
+    height:18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <label class="main-label">
+        Name <span class="required">*</span>
+    </label>
+
+    <div class="name-row">
+        <div class="name-box">
+            <input type="text">
+            <div class="sub-label">First</div>
+        </div>
+
+        <div class="name-box">
+            <input type="text">
+            <div class="sub-label">Last</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <label class="main-label">
+            Email <span class="required">*</span>
+        </label>
+
+        <div class="email-box">
+            <input type="email">
+        </div>
+    </div>
+
+    <div class="section">
+        <label class="main-label">
+            Your Experience <span class="required">*</span>
+        </label>
+
+        <div class="stars">★★★★★</div>
+
+        <div class="desc">
+            Overall, how would you rate your experience with us?
+        </div>
+    </div>
+
+    <div class="section">
+
+        <div class="section-title">
+            How satisfied are you with <span class="required">*</span>
+        </div>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>Very Unsatisfied</th>
+                <th>Unsatisfied</th>
+                <th>Neutral</th>
+                <th>Satisfied</th>
+                <th>Very Satisfied</th>
+            </tr>
+
+            <tr class="row-gray">
+                <td class="left">Purchase</td>
+                <td class="center"><input type="radio" name="purchase"></td>
+                <td class="center"><input type="radio" name="purchase"></td>
+                <td class="center"><input type="radio" name="purchase"></td>
+                <td class="center"><input type="radio" name="purchase"></td>
+                <td class="center"><input type="radio" name="purchase"></td>
+            </tr>
+
+            <tr class="row-white">
+                <td class="left">Service</td>
+                <td class="center"><input type="radio" name="service"></td>
+                <td class="center"><input type="radio" name="service"></td>
+                <td class="center"><input type="radio" name="service"></td>
+                <td class="center"><input type="radio" name="service"></td>
+                <td class="center"><input type="radio" name="service"></td>
+            </tr>
+
+            <tr class="row-gray">
+                <td class="left">Company Overall</td>
+                <td class="center"><input type="radio" name="company"></td>
+                <td class="center"><input type="radio" name="company"></td>
+                <td class="center"><input type="radio" name="company"></td>
+                <td class="center"><input type="radio" name="company"></td>
+                <td class="center"><input type="radio" name="company"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+
+        <div class="section-title">
+            How likely are you to <span class="required">*</span>
+        </div>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>Very Unlikely</th>
+                <th>Unlikely</th>
+                <th>Neutral</th>
+                <th>Likely</th>
+                <th>Very Likely</th>
+            </tr>
+
+            <tr class="row-gray">
+                <td class="left">Buy from us again</td>
+                <td class="center"><input type="radio" name="buy"></td>
+                <td class="center"><input type="radio" name="buy"></td>
+                <td class="center"><input type="radio" name="buy"></td>
+                <td class="center"><input type="radio" name="buy"></td>
+                <td class="center"><input type="radio" name="buy"></td>
+            </tr>
+
+            <tr class="row-white">
+                <td class="left">Recommend our<br>product to others</td>
+                <td class="center"><input type="radio" name="product"></td>
+                <td class="center"><input type="radio" name="product"></td>
+                <td class="center"><input type="radio" name="product"></td>
+                <td class="center"><input type="radio" name="product"></td>
+                <td class="center"><input type="radio" name="product"></td>
+            </tr>
+
+            <tr class="row-gray">
+                <td class="left">Recommend our<br>company to others</td>
+                <td class="center"><input type="radio" name="recommend"></td>
+                <td class="center"><input type="radio" name="recommend"></td>
+                <td class="center"><input type="radio" name="recommend"></td>
+                <td class="center"><input type="radio" name="recommend"></td>
+                <td class="center"><input type="radio" name="recommend"></td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>
