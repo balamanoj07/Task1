@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Personal Information Form</title>
+
+<style>
+body{
+    background:#f2f2f2;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width:420px;
+    margin:40px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 6px gray;
+}
+
+fieldset{
+    padding:10px;
+}
+
+legend{
+    font-size:18px;
+    font-weight:bold;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-size:16px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=date],
+textarea{
+    width:100%;
+    padding:8px;
+    border:1px solid #c8c8c8;
+    border-radius:3px;
+    box-sizing:border-box;
+    font-size:15px;
+}
+
+.gender{
+    margin-top:5px;
+}
+
+.gender label{
+    display:inline;
+    margin-right:20px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    margin-top:15px;
+    padding:8px 20px;
+    font-size:18px;
+    border:2px solid black;
+    border-radius:4px;
+    background:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ececec;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<form>
+
+<fieldset>
+
+<legend>User personal information</legend>
+
+<label for="name">Enter your full name</label>
+<input type="text" id="name" value="Rahul Kumar">
+
+<label for="email">Enter your email</label>
+<input type="email" id="email" value="geeks@12345gmail.com">
+
+<label for="password">Enter your password</label>
+<input type="password" id="password">
+
+<label for="cpassword">Confirm your password</label>
+<input type="password" id="cpassword">
+
+<label>Enter your gender</label>
+
+<div class="gender">
+<input type="radio" id="male" name="gender" checked>
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender">
+<label for="female">Female</label>
+
+<input type="radio" id="others" name="gender">
+<label for="others">Others</label>
+</div>
+
+<label for="dob">Enter your Date of Birth</label>
+<input type="date" id="dob" value="2009-06-10">
+
+<label for="address">Enter your Address:</label>
+<textarea id="address" rows="3">Noida Sector 137</textarea>
+
+<button type="submit">submit</button>
+
+</fieldset>
+
+</form>
+
+</div>
+
+</body>
+</html>
